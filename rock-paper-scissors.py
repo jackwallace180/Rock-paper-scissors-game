@@ -1,10 +1,9 @@
 import random
-input1 = input ('do you want to play rock, paper, scissors VS the super computer?')
-var1 = input('Rock, Paper or Scissors?').lower().strip()
-
+input1 = input('do you want to play rock, paper, scissors VS the super computer?').lower().strip()
 
 
 while input1 != 'no':
+    var1 = input('Rock, Paper or Scissors?').lower().strip()
     random_var = random.randint(1, 3)
     if random_var == 1:
         var2 = 'rock'
@@ -32,4 +31,5 @@ while input1 != 'no':
         print (f'{var1} doesnt beat {var2}')
         print ('you lose')
     input1 = input('do you want to play again?')
-    var1 = input('Rock, Paper or Scissors?').lower().strip()
+else:
+    print ('goodbye')
